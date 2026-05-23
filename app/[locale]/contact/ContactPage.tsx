@@ -14,7 +14,7 @@ export function ContactPage() {
     <>
       <section className="pt-36 pb-24 lg:pt-44 lg:pb-32 bg-black">
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }} className="text-eyebrow text-mid-gray mb-8">
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }} className="text-eyebrow text-white/60 mb-8">
             {t("title")}
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.7 }} className="text-display text-white max-w-3xl">

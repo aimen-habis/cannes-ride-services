@@ -16,7 +16,7 @@ export function LanguageSwitcher({ scrolled = false }: { scrolled?: boolean }) {
   }
 
   const base = scrolled ? "text-black" : "text-white";
-  const dim = scrolled ? "text-mid-gray" : "text-white/40";
+  const dim = scrolled ? "text-mid-gray" : "text-white/50";
 
   return (
     <button

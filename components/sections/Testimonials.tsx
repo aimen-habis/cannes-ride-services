@@ -33,7 +33,7 @@ export function Testimonials() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-eyebrow text-mid-gray mb-16 text-center"
+          className="text-eyebrow text-white/60 mb-16 text-center"
         >
           {t("title")}
         </motion.p>
@@ -57,7 +57,7 @@ export function Testimonials() {
               <p className="text-sm text-white font-medium mb-1">
                 {t(`items.${current}.name`)}
               </p>
-              <p className="text-sm text-mid-gray">
+              <p className="text-sm text-white/60">
                 {t(`items.${current}.role`)}
               </p>
             </motion.div>
@@ -65,7 +65,7 @@ export function Testimonials() {
         </div>
 
         <div className="flex items-center justify-center gap-6 mt-12">
-          <button onClick={prev} className="text-mid-gray hover:text-white transition-colors duration-300 p-2" aria-label="Previous">
+          <button onClick={prev} className="text-white/50 hover:text-white transition-colors duration-300 p-2" aria-label="Previous">
             <ChevronLeft className="w-5 h-5" />
           </button>
           <div className="flex gap-2">
@@ -78,7 +78,7 @@ export function Testimonials() {
               />
             ))}
           </div>
-          <button onClick={next} className="text-mid-gray hover:text-white transition-colors duration-300 p-2" aria-label="Next">
+          <button onClick={next} className="text-white/50 hover:text-white transition-colors duration-300 p-2" aria-label="Next">
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>

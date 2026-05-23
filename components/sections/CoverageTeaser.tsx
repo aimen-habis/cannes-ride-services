@@ -47,7 +47,7 @@ export function CoverageTeaser() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.04, duration: 0.5 }}
-              className="inline-block text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-light-gray hover:text-black transition-colors duration-500 cursor-default mr-4 sm:mr-6 leading-relaxed"
+              className="inline-block text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-black/25 hover:text-black transition-colors duration-500 cursor-default mr-4 sm:mr-6 leading-relaxed"
             >
               {city}
             </motion.span>

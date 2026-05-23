@@ -24,7 +24,7 @@ export function TrustIndicators() {
               <div className="text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-white mb-3 leading-none">
                 {t(`${stat}.value`)}
               </div>
-              <div className="text-xs font-medium tracking-[0.12em] uppercase text-mid-gray">
+              <div className="text-xs font-medium tracking-[0.12em] uppercase text-white/60">
                 {t(`${stat}.label`)}
               </div>
             </motion.div>

@@ -37,7 +37,7 @@ export function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1, duration: 0.7 }}
-          className="text-lead text-mid-gray max-w-xl mx-auto mb-12"
+          className="text-lg text-white/80 max-w-xl mx-auto mb-12 leading-relaxed font-light"
         >
           {t("subtitle")}
         </motion.p>

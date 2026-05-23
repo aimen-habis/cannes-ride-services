@@ -19,14 +19,14 @@ export function Footer() {
             <span className="text-[0.95rem] font-medium tracking-tight block mb-6">
               CANNES RIDE
             </span>
-            <p className="text-sm text-white/40 leading-relaxed max-w-xs">
+            <p className="text-sm text-white/60 leading-relaxed max-w-xs">
               {t("description")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-eyebrow text-white/40 text-[0.65rem] mb-6">
+            <h4 className="text-eyebrow text-white/60 text-[0.65rem] mb-6">
               {t("quickLinks")}
             </h4>
             <ul className="space-y-4">
@@ -40,7 +40,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/40 hover:text-white transition-colors duration-300"
+                    className="text-sm text-white/60 hover:text-white transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -51,22 +51,22 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="text-eyebrow text-white/40 text-[0.65rem] mb-6">
+            <h4 className="text-eyebrow text-white/60 text-[0.65rem] mb-6">
               {t("legal")}
             </h4>
             <ul className="space-y-4">
               <li>
-                <Link href="/mentions-legales" className="text-sm text-white/40 hover:text-white transition-colors duration-300">
+                <Link href="/mentions-legales" className="text-sm text-white/60 hover:text-white transition-colors duration-300">
                   {t("mentionsLegales")}
                 </Link>
               </li>
               <li>
-                <Link href="/politique-confidentialite" className="text-sm text-white/40 hover:text-white transition-colors duration-300">
+                <Link href="/politique-confidentialite" className="text-sm text-white/60 hover:text-white transition-colors duration-300">
                   {t("politiqueConfidentialite")}
                 </Link>
               </li>
               <li>
-                <Link href="/cgv" className="text-sm text-white/40 hover:text-white transition-colors duration-300">
+                <Link href="/cgv" className="text-sm text-white/60 hover:text-white transition-colors duration-300">
                   {t("cgv")}
                 </Link>
               </li>
@@ -75,10 +75,10 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-eyebrow text-white/40 text-[0.65rem] mb-6">
+            <h4 className="text-eyebrow text-white/60 text-[0.65rem] mb-6">
               {t("contact")}
             </h4>
-            <ul className="space-y-4 text-sm text-white/40">
+            <ul className="space-y-4 text-sm text-white/60">
               <li>{BUSINESS.address}</li>
               <li>
                 <a href={`tel:${BUSINESS.phone}`} className="hover:text-white transition-colors duration-300">
@@ -91,7 +91,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/5 mt-16 pt-8">
-          <p className="text-[0.7rem] text-white/20">
+          <p className="text-[0.7rem] text-white/40">
             &copy; {new Date().getFullYear()} {BUSINESS.name}. {t("rights")}
           </p>
         </div>

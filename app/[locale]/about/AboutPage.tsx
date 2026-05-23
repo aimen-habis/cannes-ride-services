@@ -15,7 +15,7 @@ export function AboutPage() {
     <>
       <section className="pt-36 pb-24 lg:pt-44 lg:pb-32 bg-black">
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }} className="text-eyebrow text-mid-gray mb-8">
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }} className="text-eyebrow text-white/60 mb-8">
             {t("title")}
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.7 }} className="text-display text-white max-w-3xl">
@@ -64,7 +64,7 @@ export function AboutPage() {
       {/* Values */}
       <section className="py-32 lg:py-44 bg-off-white">
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-eyebrow text-mid-gray mb-20 text-center">
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-eyebrow text-black/50 mb-20 text-center">
             {t("values.title")}
           </motion.p>
 
@@ -75,7 +75,7 @@ export function AboutPage() {
                 <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08, duration: 0.6 }} className="bg-off-white p-10 lg:p-14 text-center">
                   <Icon className="w-5 h-5 text-black mx-auto mb-6" />
                   <h3 className="text-base font-medium tracking-tight text-black mb-4">{t(`values.items.${i}.title`)}</h3>
-                  <p className="text-sm text-mid-gray leading-relaxed">{t(`values.items.${i}.description`)}</p>
+                  <p className="text-sm text-black/55 leading-relaxed">{t(`values.items.${i}.description`)}</p>
                 </motion.div>
               );
             })}
@@ -86,7 +86,7 @@ export function AboutPage() {
       {/* Fleet */}
       <section className="py-32 lg:py-44 bg-black">
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
-          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-eyebrow text-mid-gray mb-20 text-center">
+          <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-eyebrow text-white/60 mb-20 text-center">
             {t("fleet.title")}
           </motion.p>
 
@@ -97,7 +97,7 @@ export function AboutPage() {
                 <h3 className="text-lg font-medium tracking-tight text-white mb-3">{t(`fleet.items.${i}.name`)}</h3>
                 <p className="text-sm text-white/40 mb-6 leading-relaxed">{t(`fleet.items.${i}.description`)}</p>
                 <div className="w-6 h-px bg-white/10 mx-auto mb-4" />
-                <div className="flex items-center justify-center gap-2 text-xs text-mid-gray">
+                <div className="flex items-center justify-center gap-2 text-xs text-white/60">
                   <Users className="w-3.5 h-3.5" />
                   {t(`fleet.items.${i}.capacity`)}
                 </div>

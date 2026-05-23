@@ -42,6 +42,7 @@ export function Hero() {
         className="object-cover grayscale"
       />
       <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
 
       {/* Main content */}
       <div className="relative z-10 flex-1 flex items-center">
@@ -50,7 +51,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-eyebrow text-mid-gray mb-8"
+            className="text-eyebrow text-white/60 mb-8"
           >
             Premium chauffeur service
           </motion.p>
@@ -63,7 +64,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.0, duration: 0.7, ease: "easeOut" }}
-            className="text-lead text-mid-gray max-w-xl mb-12"
+            className="text-lg text-white/85 max-w-xl mb-12 leading-relaxed font-light"
           >
             {t("subtitle")}
           </motion.p>
@@ -107,11 +108,11 @@ export function Hero() {
         <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24 py-6 flex items-center gap-6 overflow-x-auto">
           {cities.map((city, i) => (
             <span key={city} className="flex items-center gap-6 shrink-0">
-              <span className="text-[0.7rem] font-medium tracking-[0.12em] uppercase text-white/40">
+              <span className="text-[0.7rem] font-medium tracking-[0.12em] uppercase text-white/60">
                 {city}
               </span>
               {i < cities.length - 1 && (
-                <span className="text-white/10">&middot;</span>
+                <span className="text-white/25">&middot;</span>
               )}
             </span>
           ))}

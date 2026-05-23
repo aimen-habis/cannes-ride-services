@@ -1,0 +1,176 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Strict monochrome */
+  --color-black: #0A0A0A;
+  --color-white: #FFFFFF;
+  --color-off-white: #FAFAFA;
+  --color-light-gray: #F2F2F2;
+  --color-mid-gray: #999999;
+  --color-dark-gray: #333333;
+  --color-border-light: #E5E5E5;
+  --color-border-dark: #1A1A1A;
+  --color-whatsapp: #25D366;
+
+  /* shadcn mapping */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-destructive: var(--destructive);
+
+  --font-sans: var(--font-sans);
+
+  --radius-sm: 0.125rem;
+  --radius-md: 0.125rem;
+  --radius-lg: 0.125rem;
+  --radius-xl: 0.125rem;
+  --radius-2xl: 0.125rem;
+}
+
+:root {
+  --primary: #0A0A0A;
+  --primary-foreground: #FFFFFF;
+  --accent: #F2F2F2;
+  --accent-foreground: #0A0A0A;
+  --background: #FFFFFF;
+  --foreground: #0A0A0A;
+  --muted: #999999;
+  --muted-foreground: #999999;
+  --card: #FFFFFF;
+  --card-foreground: #0A0A0A;
+  --border: #E5E5E5;
+  --input: #E5E5E5;
+  --ring: #0A0A0A;
+  --secondary: #FAFAFA;
+  --secondary-foreground: #0A0A0A;
+  --popover: #FFFFFF;
+  --popover-foreground: #0A0A0A;
+  --destructive: #DC2626;
+  --radius: 0.125rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    color: #0A0A0A;
+    background: #FFFFFF;
+  }
+}
+
+/* Typography scale */
+.text-hero {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.text-display {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 500;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+}
+
+.text-h2 {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.text-eyebrow {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.text-lead {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  color: #333333;
+}
+
+/* Animated underline for links */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 400ms ease;
+}
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* B&W image treatment */
+.img-bw {
+  filter: grayscale(100%) contrast(1.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E5E5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
+
+/* Selection */
+::selection {
+  background: #0A0A0A;
+  color: #FFFFFF;
+}

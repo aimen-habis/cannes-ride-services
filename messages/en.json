@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Private Driver Cannes — VTC French Riviera | Cannes Ride Services",
+      "description": "Premium VTC service in Cannes. Private chauffeur for Nice airport transfers, events, long-distance rides on the French Riviera. Book via WhatsApp."
+    },
+    "services": {
+      "title": "Our VTC Services in Cannes — Transfers & Private Chauffeur",
+      "description": "Nice-Cannes airport transfers, chauffeur for Cannes Film Festival, MIPIM, long-distance trips, hourly service. Premium VTC on the French Riviera."
+    },
+    "about": {
+      "title": "About Us — Cannes Ride Services | Premium VTC Cannes",
+      "description": "Discover Cannes Ride Services: your trusted private chauffeur on the French Riviera. Premium vehicles, punctuality, discretion. 24/7 service."
+    },
+    "zones": {
+      "title": "Coverage Areas — VTC Cannes, Nice, Monaco, Antibes",
+      "description": "VTC service available in Cannes, Nice, Monaco, Antibes, Saint-Tropez and across the French Riviera. Airport transfers and inter-city rides."
+    },
+    "contact": {
+      "title": "Book a VTC in Cannes — Contact & WhatsApp Booking",
+      "description": "Book your private chauffeur in Cannes via WhatsApp or phone. VTC service available 24/7 on the French Riviera. Fast response guaranteed."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "zones": "Coverage",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "title": "Your Private Chauffeur in Cannes",
+    "subtitle": "Premium VTC transport across the entire French Riviera. Punctuality, discretion, and comfort for every journey.",
+    "tagline": "The VTC experience that simplifies your life",
+    "bookWhatsApp": "Book via WhatsApp",
+    "callNow": "Call Now"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Tailor-made transport solutions for every need on the French Riviera.",
+    "airport": {
+      "title": "Airport Transfers",
+      "description": "Punctual pickup at Nice Côte d'Azur, Marseille Provence, or Paris airports. Real-time flight tracking and complimentary waiting time."
+    },
+    "business": {
+      "title": "Business Travel",
+      "description": "Discreet and reliable service for your business appointments. Vehicles equipped with Wi-Fi and chargers, confidentiality assured."
+    },
+    "events": {
+      "title": "Events & Festivals",
+      "description": "Dedicated chauffeur for the Cannes Film Festival, MIPIM, MIPCOM, Cannes Lions. Prestigious transport for your Riviera events."
+    },
+    "longDistance": {
+      "title": "Long-Distance Rides",
+      "description": "Travel in comfort to Monaco, Saint-Tropez, Marseille, Milan, or any destination in France and Europe."
+    },
+    "hourly": {
+      "title": "Hourly Chauffeur Service",
+      "description": "Your private driver by the hour. Perfect for shopping, sightseeing, or a day of consecutive appointments."
+    },
+    "wedding": {
+      "title": "Weddings & Special Occasions",
+      "description": "Elevate your most precious moments with a premium vehicle and a formally dressed chauffeur. Decoration on request."
+    }
+  },
+  "trust": {
+    "title": "Trusted by Our Clients",
+    "experience": {
+      "value": "15+",
+      "label": "Years of Experience"
+    },
+    "rides": {
+      "value": "10,000+",
+      "label": "Rides Completed"
+    },
+    "languages": {
+      "value": "4",
+      "label": "Languages Spoken"
+    },
+    "available": {
+      "value": "24/7",
+      "label": "Availability"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "items": [
+      {
+        "name": "Sophie M.",
+        "role": "Marketing Director, Paris",
+        "text": "Impeccable service. My driver was on time at Nice Airport despite a flight delay. Spotless vehicle and a very pleasant ride to Cannes.",
+        "rating": 5
+      },
+      {
+        "name": "James W.",
+        "role": "Film Producer, Los Angeles",
+        "text": "I've used Cannes Ride Services during the Film Festival for three consecutive years. Always punctual, discreet, and with impeccable vehicles. Highly recommended.",
+        "rating": 5
+      },
+      {
+        "name": "Pierre L.",
+        "role": "Entrepreneur, Monaco",
+        "text": "I rely on Cannes Ride Services for all my trips between Monaco and Cannes. Punctuality and professionalism are always guaranteed.",
+        "rating": 5
+      },
+      {
+        "name": "Elena R.",
+        "role": "Architect, Milan",
+        "text": "Perfect transfer from Nice Airport for MIPIM. The driver spoke Italian, which made the journey even more enjoyable. Five-star service.",
+        "rating": 5
+      },
+      {
+        "name": "Marie-Claire D.",
+        "role": "Wedding Planner, Cannes",
+        "text": "For my clients' weddings, I only trust Cannes Ride Services. Stunning vehicles, formally dressed chauffeurs, perfect coordination.",
+        "rating": 5
+      }
+    ]
+  },
+  "coverage": {
+    "title": "Coverage Areas",
+    "subtitle": "Premium VTC service across the entire French Riviera and beyond.",
+    "cities": [
+      "Cannes",
+      "Nice",
+      "Monaco",
+      "Antibes",
+      "Saint-Tropez",
+      "Grasse",
+      "Mougins",
+      "Juan-les-Pins",
+      "Mandelieu-la-Napoule",
+      "Fréjus"
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Excellence in service for your mobility on the French Riviera.",
+    "story": "Founded in Cannes, in the heart of the French Riviera, Cannes Ride Services was born from a passion for exceptional service and quality transport. Since our beginnings, we have accompanied thousands of travelers — professionals, tourists, personalities — with a single goal: to deliver a flawless travel experience, worthy of the prestige of the French Riviera.",
+    "mission": "Our mission is to redefine private transport on the Côte d'Azur. Every ride is a promise: a premium vehicle, a professional and multilingual chauffeur, perfect timing. We don't simply take you from point A to point B — we give you peace of mind.",
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Punctuality",
+          "description": "Your time is your most precious asset. We are always there before you, never after. Real-time flight tracking for airport transfers."
+        },
+        {
+          "title": "Discretion",
+          "description": "Absolute confidentiality for every journey. Our chauffeurs are trained in the utmost discretion."
+        },
+        {
+          "title": "Luxury & Comfort",
+          "description": "Fleet of recent premium Mercedes vehicles, leather interiors, air conditioning, Wi-Fi, and complimentary water on board."
+        },
+        {
+          "title": "Multilingual",
+          "description": "Our chauffeurs speak French, English, Arabic, and Italian. Seamless communication with our international clients."
+        }
+      ]
+    },
+    "fleet": {
+      "title": "Our Fleet",
+      "items": [
+        {
+          "name": "Mercedes E-Class",
+          "description": "Elegance and comfort for your daily travel and airport transfers.",
+          "capacity": "3 passengers"
+        },
+        {
+          "name": "Mercedes S-Class",
+          "description": "The pinnacle of automotive luxury. Ideal for prestige events and VIPs.",
+          "capacity": "3 passengers"
+        },
+        {
+          "name": "Mercedes V-Class",
+          "description": "Spacious and refined, perfect for groups, families, or transfers with luggage.",
+          "capacity": "7 passengers"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Book your VTC in moments via WhatsApp or fill out the form below.",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone",
+      "email": "Email",
+      "date": "Pickup Date & Time",
+      "pickup": "Pickup Location",
+      "destination": "Destination",
+      "passengers": "Number of Passengers",
+      "message": "Message (optional)",
+      "submit": "Send via WhatsApp"
+    },
+    "info": {
+      "whatsapp": "Book via WhatsApp",
+      "phone": "Call Directly",
+      "hours": "Hours",
+      "hoursValue": "Available 24/7"
+    }
+  },
+  "footer": {
+    "description": "Premium VTC service in Cannes and across the French Riviera. Airport transfers, private chauffeur, events. Available 24/7.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal Information",
+    "mentionsLegales": "Legal Notice",
+    "politiqueConfidentialite": "Privacy Policy",
+    "cgv": "Terms & Conditions",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "whatsapp": {
+    "tooltip": "Book via WhatsApp"
+  },
+  "cta": {
+    "title": "Ready to Book Your Chauffeur?",
+    "subtitle": "Contact us now to book your VTC in Cannes. Fast response, premium service, available 24/7.",
+    "bookNow": "Book Now"
+  },
+  "cookie": {
+    "message": "This site uses essential cookies to ensure proper functionality. By continuing to browse, you accept the use of these cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
+  }
+}

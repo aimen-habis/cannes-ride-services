@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "home": {
+      "title": "VTC Cannes — Chauffeur Privé Côte d'Azur | Cannes Ride Services",
+      "description": "Service VTC premium à Cannes. Chauffeur privé pour transferts aéroport Nice, événements, trajets longue distance sur la Côte d'Azur. Réservez via WhatsApp."
+    },
+    "services": {
+      "title": "Nos Services VTC à Cannes — Transferts & Chauffeur Privé",
+      "description": "Transferts aéroport Nice-Cannes, chauffeur pour le Festival de Cannes, MIPIM, trajets longue distance, mise à disposition. Service VTC haut de gamme."
+    },
+    "about": {
+      "title": "À Propos — Cannes Ride Services | VTC Premium Cannes",
+      "description": "Découvrez Cannes Ride Services : votre chauffeur privé de confiance sur la Côte d'Azur. Véhicules premium, ponctualité, discrétion. Service 24h/24."
+    },
+    "zones": {
+      "title": "Zones Desservies — VTC Cannes, Nice, Monaco, Antibes",
+      "description": "Service VTC disponible à Cannes, Nice, Monaco, Antibes, Saint-Tropez et toute la Côte d'Azur. Transferts aéroport et trajets inter-villes."
+    },
+    "contact": {
+      "title": "Réserver un VTC à Cannes — Contact & Réservation WhatsApp",
+      "description": "Réservez votre chauffeur privé à Cannes par WhatsApp ou téléphone. Service VTC disponible 24h/24 sur la Côte d'Azur. Réponse rapide garantie."
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À Propos",
+    "zones": "Zones",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "hero": {
+    "title": "Votre Chauffeur Privé à Cannes",
+    "subtitle": "Transport VTC premium sur toute la Côte d'Azur. Ponctualité, discrétion et confort pour chacun de vos déplacements.",
+    "tagline": "L'expérience VTC qui vous simplifie la vie",
+    "bookWhatsApp": "Réserver via WhatsApp",
+    "callNow": "Appeler maintenant"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des prestations sur-mesure pour répondre à chacun de vos besoins de transport sur la Côte d'Azur.",
+    "airport": {
+      "title": "Transferts Aéroport",
+      "description": "Prise en charge ponctuelle à l'aéroport Nice Côte d'Azur, Marseille Provence ou Paris. Suivi de vol en temps réel et attente gratuite."
+    },
+    "business": {
+      "title": "Déplacements Professionnels",
+      "description": "Un service discret et fiable pour vos rendez-vous d'affaires. Véhicules équipés Wi-Fi et chargeurs, confidentialité assurée."
+    },
+    "events": {
+      "title": "Événements & Festivals",
+      "description": "Chauffeur dédié pour le Festival de Cannes, MIPIM, MIPCOM, Cannes Lions. Transport de prestige pour vos événements sur la Riviera."
+    },
+    "longDistance": {
+      "title": "Trajets Longue Distance",
+      "description": "Voyagez confortablement vers Monaco, Saint-Tropez, Marseille, Milan ou toute destination en France et en Europe."
+    },
+    "hourly": {
+      "title": "Mise à Disposition",
+      "description": "Votre chauffeur privé à l'heure. Idéal pour le shopping, les visites touristiques ou une journée de rendez-vous successifs."
+    },
+    "wedding": {
+      "title": "Mariages & Occasions Spéciales",
+      "description": "Sublimez vos moments les plus précieux avec un véhicule premium et un chauffeur en tenue. Décoration sur demande."
+    }
+  },
+  "trust": {
+    "title": "La Confiance de Nos Clients",
+    "experience": {
+      "value": "15+",
+      "label": "Années d'expérience"
+    },
+    "rides": {
+      "value": "10 000+",
+      "label": "Courses effectuées"
+    },
+    "languages": {
+      "value": "4",
+      "label": "Langues parlées"
+    },
+    "available": {
+      "value": "24/7",
+      "label": "Disponibilité"
+    }
+  },
+  "testimonials": {
+    "title": "Ce Que Disent Nos Clients",
+    "items": [
+      {
+        "name": "Sophie M.",
+        "role": "Directrice Marketing, Paris",
+        "text": "Un service irréprochable. Mon chauffeur était à l'heure à l'aéroport de Nice malgré un retard de vol. Véhicule impeccable et trajet très agréable jusqu'à Cannes.",
+        "rating": 5
+      },
+      {
+        "name": "James W.",
+        "role": "Film Producer, Los Angeles",
+        "text": "I've used Cannes Ride Services during the Film Festival for three consecutive years. Always punctual, discreet, and with impeccable vehicles. Highly recommended.",
+        "rating": 5
+      },
+      {
+        "name": "Pierre L.",
+        "role": "Entrepreneur, Monaco",
+        "text": "Je fais appel à Cannes Ride Services pour tous mes déplacements entre Monaco et Cannes. La ponctualité et le professionnalisme sont toujours au rendez-vous.",
+        "rating": 5
+      },
+      {
+        "name": "Elena R.",
+        "role": "Architecte, Milan",
+        "text": "Transfert parfait depuis l'aéroport de Nice pour le MIPIM. Le chauffeur parlait italien, ce qui a rendu le trajet encore plus agréable. Service cinq étoiles.",
+        "rating": 5
+      },
+      {
+        "name": "Marie-Claire D.",
+        "role": "Wedding Planner, Cannes",
+        "text": "Pour les mariages de mes clients, je ne fais confiance qu'à Cannes Ride Services. Véhicules sublimes, chauffeurs en tenue, coordination parfaite.",
+        "rating": 5
+      }
+    ]
+  },
+  "coverage": {
+    "title": "Zones Desservies",
+    "subtitle": "Un service VTC premium sur l'ensemble de la Côte d'Azur et au-delà.",
+    "cities": [
+      "Cannes",
+      "Nice",
+      "Monaco",
+      "Antibes",
+      "Saint-Tropez",
+      "Grasse",
+      "Mougins",
+      "Juan-les-Pins",
+      "Mandelieu-la-Napoule",
+      "Fréjus"
+    ]
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "L'excellence au service de votre mobilité sur la Côte d'Azur.",
+    "story": "Fondé à Cannes, au cœur de la Côte d'Azur, Cannes Ride Services est né d'une passion pour le service d'exception et le transport de qualité. Depuis nos débuts, nous avons accompagné des milliers de voyageurs — professionnels, touristes, personnalités — avec un seul objectif : offrir une expérience de déplacement irréprochable, à la hauteur du prestige de la Riviera française.",
+    "mission": "Notre mission est de redéfinir le transport privé sur la Côte d'Azur. Chaque course est une promesse : celle d'un véhicule premium, d'un chauffeur professionnel et multilingue, d'un timing parfait. Nous ne vous transportons pas simplement d'un point A à un point B — nous vous offrons la tranquillité d'esprit.",
+    "values": {
+      "title": "Nos Valeurs",
+      "items": [
+        {
+          "title": "Ponctualité",
+          "description": "Le temps est votre bien le plus précieux. Nous sommes toujours là avant vous, jamais après. Suivi de vol en temps réel pour les transferts aéroport."
+        },
+        {
+          "title": "Discrétion",
+          "description": "Confidentialité absolue pour chacun de vos déplacements. Nos chauffeurs sont formés à la discrétion la plus totale."
+        },
+        {
+          "title": "Luxe & Confort",
+          "description": "Flotte de véhicules premium Mercedes récents, intérieurs cuir, climatisation, Wi-Fi et bouteilles d'eau fraîche à bord."
+        },
+        {
+          "title": "Multilinguisme",
+          "description": "Nos chauffeurs parlent français, anglais, arabe et italien. Une communication fluide avec nos clients internationaux."
+        }
+      ]
+    },
+    "fleet": {
+      "title": "Notre Flotte",
+      "items": [
+        {
+          "name": "Mercedes Classe E",
+          "description": "Élégance et confort pour vos déplacements quotidiens et transferts aéroport.",
+          "capacity": "3 passagers"
+        },
+        {
+          "name": "Mercedes Classe S",
+          "description": "Le summum du luxe automobile. Idéal pour les événements prestige et les VIP.",
+          "capacity": "3 passagers"
+        },
+        {
+          "name": "Mercedes Classe V",
+          "description": "Spacieux et raffiné, parfait pour les groupes, familles ou transferts avec bagages.",
+          "capacity": "7 passagers"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Réservez votre VTC en quelques instants via WhatsApp ou remplissez le formulaire ci-dessous.",
+    "form": {
+      "name": "Nom complet",
+      "phone": "Téléphone",
+      "email": "Email",
+      "date": "Date & heure de prise en charge",
+      "pickup": "Lieu de prise en charge",
+      "destination": "Destination",
+      "passengers": "Nombre de passagers",
+      "message": "Message (optionnel)",
+      "submit": "Envoyer via WhatsApp"
+    },
+    "info": {
+      "whatsapp": "Réserver via WhatsApp",
+      "phone": "Appeler directement",
+      "hours": "Horaires",
+      "hoursValue": "Disponible 24h/24, 7j/7"
+    }
+  },
+  "footer": {
+    "description": "Service VTC premium à Cannes et sur toute la Côte d'Azur. Transferts aéroport, chauffeur privé, événements. Disponible 24h/24.",
+    "quickLinks": "Liens Rapides",
+    "legal": "Informations Légales",
+    "mentionsLegales": "Mentions Légales",
+    "politiqueConfidentialite": "Politique de Confidentialité",
+    "cgv": "CGV",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  },
+  "whatsapp": {
+    "tooltip": "Réservez via WhatsApp"
+  },
+  "cta": {
+    "title": "Prêt à Réserver Votre Chauffeur ?",
+    "subtitle": "Contactez-nous dès maintenant pour réserver votre VTC à Cannes. Réponse rapide, service premium, disponibilité 24h/24.",
+    "bookNow": "Réserver Maintenant"
+  },
+  "cookie": {
+    "message": "Ce site utilise des cookies essentiels pour assurer son bon fonctionnement. En continuant votre navigation, vous acceptez l'utilisation de ces cookies.",
+    "accept": "Accepter",
+    "decline": "Refuser"
+  }
+}

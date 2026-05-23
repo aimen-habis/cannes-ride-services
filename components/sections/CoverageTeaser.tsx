@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -18,8 +19,16 @@ export function CoverageTeaser() {
   }
 
   return (
-    <section className="py-32 lg:py-44 bg-off-white">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
+    <section className="relative py-32 lg:py-44 bg-off-white overflow-hidden">
+      {/* Subtle background image */}
+      <Image
+        src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?w=2000&q=80&auto=format"
+        alt="French Riviera aerial"
+        fill
+        className="object-cover grayscale opacity-[0.06]"
+      />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

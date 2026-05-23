@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { MessageCircle, Phone, Clock, MapPin, ArrowRight } from "lucide-react";
+import { Phone, MessageCircle, Clock, MapPin, ArrowRight } from "lucide-react";
 import { BookingForm } from "@/components/forms/BookingForm";
 import { BUSINESS, WHATSAPP_DEEP_LINK } from "@/lib/constants";
 import { trackEvent } from "@/lib/analytics";
@@ -33,10 +33,26 @@ export function ContactPage() {
               </div>
             </div>
 
-            {/* Contact Info */}
+            {/* Contact Info — Phone FIRST, then WhatsApp */}
             <div className="lg:col-span-2 space-y-6">
+              {/* Phone — PRIMARY */}
               <motion.a
                 initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}
+                href={`tel:${BUSINESS.phone}`}
+                className="group flex items-center gap-4 p-6 bg-black text-white transition-all duration-300 hover:bg-dark-gray"
+                onClick={() => trackEvent({ action: "phone_click", category: "contact_page" })}
+              >
+                <Phone className="w-6 h-6 shrink-0" />
+                <div className="flex-1">
+                  <p className="text-sm font-medium">{t("info.phone")}</p>
+                  <p className="text-sm text-white/70">{BUSINESS.phoneDisplay}</p>
+                </div>
+                <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
+              </motion.a>
+
+              {/* WhatsApp — SECONDARY */}
+              <motion.a
+                initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.08, duration: 0.6 }}
                 href={WHATSAPP_DEEP_LINK} target="_blank" rel="noopener noreferrer"
                 className="group flex items-center gap-4 p-6 bg-whatsapp text-white transition-all duration-300 hover:bg-[#20bd5a]"
                 onClick={() => trackEvent({ action: "whatsapp_click", category: "contact_page" })}
@@ -49,18 +65,7 @@ export function ContactPage() {
                 <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
               </motion.a>
 
-              <motion.a initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.08, duration: 0.6 }}
-                href={`tel:${BUSINESS.phone}`}
-                className="flex items-center gap-4 p-6 bg-off-white border border-border-light transition-colors duration-300 hover:bg-light-gray"
-                onClick={() => trackEvent({ action: "phone_click", category: "contact_page" })}
-              >
-                <Phone className="w-5 h-5 text-black shrink-0" />
-                <div>
-                  <p className="text-sm font-medium text-black">{t("info.phone")}</p>
-                  <p className="text-sm text-mid-gray">{BUSINESS.phoneDisplay}</p>
-                </div>
-              </motion.a>
-
+              {/* Hours */}
               <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.16, duration: 0.6 }}
                 className="flex items-center gap-4 p-6 bg-off-white border border-border-light"
               >
@@ -71,6 +76,7 @@ export function ContactPage() {
                 </div>
               </motion.div>
 
+              {/* Location */}
               <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.24, duration: 0.6 }}
                 className="flex items-center gap-4 p-6 bg-off-white border border-border-light"
               >
@@ -81,6 +87,7 @@ export function ContactPage() {
                 </div>
               </motion.div>
 
+              {/* Map */}
               <div className="overflow-hidden border border-border-light">
                 <iframe
                   src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000!2d${BUSINESS.coordinates.lng}!3d${BUSINESS.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1`}

@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { ArrowRight, Phone } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import { BUSINESS, WHATSAPP_DEEP_LINK } from "@/lib/constants";
 import { trackEvent } from "@/lib/analytics";
 
@@ -32,17 +33,19 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-between bg-black overflow-hidden">
-      {/* Optional background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 img-bw"
-        style={{ backgroundImage: "url('/images/hero-cannes.jpg')" }}
+      {/* Background image */}
+      <Image
+        src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=2400&q=85&auto=format"
+        alt="Luxury chauffeur service Cannes"
+        fill
+        priority
+        className="object-cover grayscale"
       />
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/65" />
 
-      {/* Main content — starts ~30% from top */}
+      {/* Main content */}
       <div className="relative z-10 flex-1 flex items-center">
         <div className="w-full max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
-          {/* Eyebrow */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -52,12 +55,10 @@ export function Hero() {
             Premium chauffeur service
           </motion.p>
 
-          {/* Hero title — massive, left-aligned */}
           <h1 className="text-hero text-white mb-8 max-w-4xl">
             <AnimatedWords text={t("tagline")} />
           </h1>
 
-          {/* Lead text */}
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -67,7 +68,7 @@ export function Hero() {
             {t("subtitle")}
           </motion.p>
 
-          {/* CTAs */}
+          {/* CTAs — Call FIRST, WhatsApp second */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
@@ -75,22 +76,22 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href={WHATSAPP_DEEP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-black text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white hover:ring-1 hover:ring-white"
-              onClick={() => trackEvent({ action: "whatsapp_click", category: "hero" })}
-            >
-              <span>{t("bookWhatsApp")}</span>
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-            <a
               href={`tel:${BUSINESS.phone}`}
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-transparent text-white text-sm font-medium ring-1 ring-white/30 transition-all duration-300 hover:ring-white hover:bg-white/5"
+              className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black text-sm font-medium transition-all duration-300 hover:bg-transparent hover:text-white hover:ring-1 hover:ring-white"
               onClick={() => trackEvent({ action: "phone_click", category: "hero" })}
             >
               <Phone className="w-4 h-4" />
               <span>{t("callNow")}</span>
+            </a>
+            <a
+              href={WHATSAPP_DEEP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent text-white text-sm font-medium ring-1 ring-white/30 transition-all duration-300 hover:ring-white hover:bg-white/5"
+              onClick={() => trackEvent({ action: "whatsapp_click", category: "hero" })}
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>{t("bookWhatsApp")}</span>
             </a>
           </motion.div>
         </div>

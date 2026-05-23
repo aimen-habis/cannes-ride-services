@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Clock, Eye, Gem, Globe, Users, Car } from "lucide-react";
@@ -23,14 +24,40 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* Story */}
+      {/* Story — asymmetric editorial with image */}
       <section className="py-32 lg:py-44 bg-white">
-        <div className="max-w-3xl mx-auto px-6 md:px-16">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-            <p className="text-lead mb-12">{t("story")}</p>
-            <div className="w-12 h-px bg-border-light mx-auto mb-12" />
-            <p className="text-dark-gray leading-relaxed">{t("mission")}</p>
-          </motion.div>
+        <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:px-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            {/* Image — left */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="aspect-[3/4] overflow-hidden"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1000&q=85&auto=format"
+                alt="Chauffeur service"
+                width={1000}
+                height={1333}
+                className="w-full h-full object-cover grayscale"
+              />
+            </motion.div>
+
+            {/* Text — right, starts lower */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="lg:pt-20"
+            >
+              <p className="text-lead mb-10">{t("story")}</p>
+              <div className="w-12 h-px bg-border-light mb-10" />
+              <p className="text-dark-gray leading-relaxed">{t("mission")}</p>
+            </motion.div>
+          </div>
         </div>
       </section>
 

@@ -87,9 +87,20 @@ export function Header() {
               })}
             </nav>
 
-            {/* Desktop Actions */}
-            <div className="hidden lg:flex items-center gap-5">
+            {/* Desktop Actions — Call first */}
+            <div className="hidden lg:flex items-center gap-4">
               <LanguageSwitcher scrolled={scrolled} />
+              <a
+                href={`tel:${BUSINESS.phone}`}
+                className={`px-5 py-2 text-sm font-medium transition-all duration-300 ${
+                  scrolled
+                    ? "bg-black text-white hover:bg-white hover:text-black hover:ring-1 hover:ring-black"
+                    : "bg-white text-black hover:bg-transparent hover:text-white hover:ring-1 hover:ring-white"
+                }`}
+                onClick={() => trackEvent({ action: "phone_click", category: "header" })}
+              >
+                {t("callNow" as any) || "Appeler"}
+              </a>
               <a
                 href={WHATSAPP_DEEP_LINK}
                 target="_blank"
@@ -185,24 +196,34 @@ export function Header() {
               </div>
             </div>
 
-            {/* CTA */}
+            {/* CTAs — Call first */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="px-6 pb-6 shrink-0"
+              className="px-6 pb-6 shrink-0 flex flex-col gap-3"
             >
+              <a
+                href={`tel:${BUSINESS.phone}`}
+                className="block text-center py-4 bg-white text-black text-sm font-medium transition-all duration-300"
+                onClick={() => {
+                  trackEvent({ action: "phone_click", category: "mobile_menu" });
+                  setMobileOpen(false);
+                }}
+              >
+                Appeler maintenant
+              </a>
               <a
                 href={WHATSAPP_DEEP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-center py-4 bg-white text-black text-sm font-medium transition-all duration-300"
+                className="block text-center py-4 ring-1 ring-white text-white text-sm font-medium transition-all duration-300 hover:bg-white/5"
                 onClick={() => {
                   trackEvent({ action: "whatsapp_click", category: "mobile_menu" });
                   setMobileOpen(false);
                 }}
               >
-                {t("book")}
+                Réserver via WhatsApp
               </a>
             </motion.div>
 

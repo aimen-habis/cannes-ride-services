@@ -99,7 +99,7 @@ export function Header() {
                 }`}
                 onClick={() => trackEvent({ action: "phone_click", category: "header" })}
               >
-                {t("callNow" as any) || "Appeler"}
+                Appeler
               </a>
               <a
                 href={WHATSAPP_DEEP_LINK}
